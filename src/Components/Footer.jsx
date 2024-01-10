@@ -16,7 +16,7 @@ import gitHubIcon from "../images/socials/github.svg";
 import instagramIcon from "../images/socials/instagram.svg";
 import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
-import twitterIcon from "../images/socials/twitter.svg";
+import xIcon from "../images/socials/x.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
 
 /**
@@ -27,18 +27,7 @@ import youTubeIcon from "../images/socials/youtube.svg";
  */
 
 const Footer = (props) => {
-  const {
-    devDotTo,
-    email,
-    gitHub,
-    instagram,
-    linkedIn,
-    medium,
-    name,
-    primaryColor,
-    twitter,
-    youTube,
-  } = props;
+  const { devDotTo, email, gitHub, instagram, linkedIn, medium, name, primaryColor, x, youTube } = props;
 
   return (
     <div
@@ -98,9 +87,9 @@ const Footer = (props) => {
             <img src={mediumIcon} alt="Medium" className="socialIcon" />
           </a>
         )}
-        {twitter && (
-          <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
-            <img src={twitterIcon} alt="Twitter" className="socialIcon" />
+        {x && (
+          <a href={`https://x.com/${x}`} target="_blank" rel="noopener noreferrer">
+            <img src={xIcon} alt="X" className="socialIcon" />
           </a>
         )}
         {youTube && (
@@ -133,7 +122,7 @@ Footer.propTypes = {
   medium: PropTypes.string,
   name: PropTypes.string.isRequired,
   primaryColor: PropTypes.string,
-  twitter: PropTypes.string,
+  x: PropTypes.string,
   youTube: PropTypes.string,
 
 };
